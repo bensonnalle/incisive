@@ -62,6 +62,9 @@ export const query = graphql`
       id
       slug
       title
+      coverImage {
+        handle
+      }
       content
     }
   }

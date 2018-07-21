@@ -24,6 +24,9 @@ module.exports = {
             title
             content
             updatedAt
+            coverImage {
+              handle
+            }
           }
         }`,
       },
