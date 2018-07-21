@@ -13,7 +13,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
     graphql(`
       {
-        allPost {
+        allpost {
           edges {
             node {
               id
@@ -28,7 +28,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       if (result.errors) {
         console.log(result.errors);
       }
-      result.data.allPost.edges.map(({ node }) => {
+      result.data.allpost.edges.map(({ node }) => {
         createPage({
           path: `/post/${node.slug}`,
           component: slash(postTemplate),

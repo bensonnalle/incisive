@@ -46,7 +46,7 @@ const IndexPage = ({ data }) => {
         <Helmet title="Mosaics" />
         <Typography variant="display1">Mosaics</Typography>
         <List>
-          {data.allPost.edges.map(post => (
+          {data.allpost.edges.map(post => (
             <ListItem key={post.node.id}>
               <Link to={`/post/${post.node.slug}`}>
               </Link>
