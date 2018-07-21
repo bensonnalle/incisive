@@ -13,7 +13,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
     graphql(`
       {
-        allposts {
+        allPost {
           edges {
             node {
               id

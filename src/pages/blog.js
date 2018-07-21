@@ -71,7 +71,7 @@ export default IndexPage;
 
 export const query = graphql`
   query GetPosts {
-    allposts(sort: { fields: [updatedAt], order: DESC }) {
+    allPost(sort: { fields: [updatedAt], order: DESC }) {
       edges {
         node {
           id
